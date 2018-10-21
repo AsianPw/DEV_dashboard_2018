@@ -14,7 +14,6 @@ exports.getLastSub = function(sub, nbr, callback){
                     callback(null, null);
                 else {
                     for (let i = 0; i < nbr; ++i) {
-                        console.log(result);
                         if (result.data.children[i] && result.data.children[i].data.title != null) {
                             posts.push({
                                 title: result.data.children[i].data.title,
