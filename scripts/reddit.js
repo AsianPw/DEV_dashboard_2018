@@ -9,7 +9,7 @@ exports.getLastSub = function(sub, nbr, callback){
                 callback(null, null);
             else {
                 let result = JSON.parse(body);
-                if (result.error.toString() === "404")
+                if (result.error && result.error.toString() === "404")
                     callback(null, null);
                 else {
                     let posts = [];
