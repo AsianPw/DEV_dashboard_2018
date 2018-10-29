@@ -12,6 +12,7 @@ cache:
 
 before_install:
   - npm prune
+  - openssl aes-256-cbc -K $encrypted_bcbca1bd0980_key -iv $encrypted_bcbca1bd0980_iv -in id_rsa.enc -out id_rsa -d
 
 jobs:
   include:
@@ -40,8 +41,7 @@ jobs:
 
 after_success:
   - eval "$(ssh-agent -s)"
-  - chmod 600 .travis/id_rsa
-  - ssh-add .travis/id_rsa
+  - chmod 600 ./id_rsa
+  - ssh-add ./id_rsa
   - git remote add deploy git@git.epitech.eu:brice.lang-nguyen@epitech.eu/DEV_dashboard_2018
   - git push deploy --all
-
