@@ -4,7 +4,7 @@ node_js:
 
 addons:
   ssh_known_hosts:
-  - git.epitech.eu
+    - git.epitech.eu
 
 cache:
   directories:
