@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/briceln/DEV_dashboard_2018.svg?branch=master)](https://travis-ci.com/briceln/DEV_dashboard_2018)
+[![Build Status](https://travis-ci.com/briceln/Dashboard.svg?branch=master)](https://travis-ci.com/briceln/Dashboard)
 
 # Deploy the app
 
